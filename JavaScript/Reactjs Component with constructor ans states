@@ -1,0 +1,37 @@
+import React from "react";
+import axios from "axios";
+import Cart from "./Cart";
+import Months from "./Months";
+import Header from "./Header";
+
+class MyComponent extends React.Component {
+
+  constructor(props) {
+  
+   super(props);
+    
+    this.state = {
+      error: null,
+      isLoaded: false,
+      items: [],
+      item_flovors: [],
+      item_flavor_selected: 1,
+      item_months: [],
+      item_month_selected: 1,
+      type: "all",
+      product_id: null,
+      cart_items: [],
+      item_price: null
+    };
+    
+  }
+  
+  
+ render() {
+ 
+ return (
+        <h1>MyComponent</h1>
+      );
+  }
+
+export default MyComponent;
